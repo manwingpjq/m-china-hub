@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>资料整理 · 世界杯信息索引</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #f9f7f4;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', 'PingFang SC', sans-serif;
+            color: #1e1e1a;
+            line-height: 1.7;
+            padding: 2.4rem 1.2rem;
+        }
+        .page {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        /* 标题区 */
+        .hero {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #d9d2c8;
+            padding-bottom: 1.6rem;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #2c2b28;
+            margin-bottom: 0.4rem;
+        }
+        .hero .sub {
+            font-size: 0.95rem;
+            color: #6b6258;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem 1.2rem;
+        }
+        .hero .sub span {
+            display: inline-block;
+        }
+        /* 分类目录卡片 */
+        .catalog {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            margin-bottom: 3.6rem;
+        }
+        .section-block {
+            border-left: 3px solid #c2b7a7;
+            padding-left: 1.2rem;
+        }
+        .section-block h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #3d3a35;
+            margin-bottom: 0.7rem;
+        }
+        .section-block p {
+            font-size: 1rem;
+            color: #3b3731;
+            margin-bottom: 0.8rem;
+        }
+        .meta-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.8rem;
+            font-size: 0.95rem;
+            color: #4f4940;
+            margin: 0.7rem 0 0.2rem 0;
+        }
+        .meta-list li {
+            position: relative;
+        }
+        .meta-list li::before {
+            content: "·";
+            position: absolute;
+            left: -1rem;
+            color: #b0a79a;
+        }
+        .meta-list li:first-child::before { content: none; }
+        .tag {
+            display: inline-block;
+            background: #eae5dd;
+            padding: 0.1rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            color: #3e3a33;
+            margin-right: 0.3rem;
+        }
+        .insight {
+            background: #f0ece5;
+            border-radius: 12px;
+            padding: 1.3rem 1.5rem;
+            margin: 2.2rem 0 2.8rem 0;
+        }
+        .insight h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #2d2a24;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+        .insight p {
+            font-size: 0.95rem;
+            color: #3d3932;
+            margin-bottom: 0.3rem;
+        }
+        .faq-mini {
+            background: #fff;
+            border: 1px solid #dfd9cf;
+            border-radius: 16px;
+            padding: 1.8rem 1.8rem 1.4rem 1.8rem;
+            margin-bottom: 2.8rem;
+        }
+        .faq-mini h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #2e2b26;
+            letter-spacing: 0.01em;
+            border-bottom: 1px dashed #ded6c9;
+            padding-bottom: 0.7rem;
+            margin-bottom: 1.2rem;
+        }
+        .faq-item {
+            margin-bottom: 1rem;
+        }
+        .faq-item strong {
+            font-weight: 500;
+            color: #37342e;
+            display: block;
+            margin-bottom: 0.1rem;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #514b42;
+            margin-left: 0.8rem;
+        }
+        .link-area {
+            border-top: 1px solid #dad3c9;
+            padding-top: 1.6rem;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            color: #3b3730;
+        }
+        .link-area a {
+            color: #1e3c5c;
+            text-decoration: none;
+            border-bottom: 1px solid #b9b0a2;
+            font-weight: 450;
+        }
+        .link-area a:hover {
+            border-bottom-color: #1e3c5c;
+        }
+        .footnote {
+            margin-top: 3rem;
+            padding-top: 0.8rem;
+            font-size: 0.8rem;
+            color: #898073;
+            border-top: 1px solid #ddd6cb;
+            text-align: left;
+        }
+        @media (max-width: 480px) {
+            body { padding: 1.6rem 0.9rem; }
+            .hero h1 { font-size: 1.7rem; }
+            .section-block { padding-left: 0.9rem; }
+            .insight { padding: 1rem 1.1rem; }
+            .faq-mini { padding: 1.2rem 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <div class="hero">
+        <h1>世界杯 · 信息索引库</h1>
+        <div class="sub">
+            <span>资料整理 · 赛程 · 纪录 · 文化背景</span>
+            <span>｜持续收录</span>
+        </div>
+    </div>
+
+    <div class="catalog">
+        <div class="section-block">
+            <h2>📋 赛事档案</h2>
+            <p>历届世界杯主办国、决赛比分、最佳射手、参赛队伍规模等基础数据已整理为对照表。从1930年乌拉圭到2026年美加墨，跨度近百年。每届赛事包含举办时间、场馆数量、观众总数、金球奖得主等字段，适合横向比较与趋势分析。</p>
+            <ul class="meta-list">
+                <li>22届完整数据</li>
+                <li>冠亚军列表</li>
+                <li>主办国轮次</li>
+                <li>进球统计</li>
+            </ul>
+        </div>
+
+        <div class="section-block">
+            <h2>📚 规则与演变</h2>
+            <p>越位规则修订、红黄牌启用时间、换人名额变化、加时赛与点球大战的历史沿革。收录国际足联官方规则手册各版本核心摘要，以及重大规则调整对比赛风格产生的影响笔记。</p>
+            <p><span class="tag">越位</span><span class="tag">换人</span><span class="tag">小组赛</span><span class="tag">淘汰赛</span></p>
+        </div>
+
+        <div class="section-block">
+            <h2>🗂️ 球队与战术档案</h2>
+            <p>按大洲与年代整理经典国家队阵型、代表性教练理念、关键比赛战术复盘。包含4-3-3、4-4-2、3-5-2等体系在不同时期的实际使用案例，以及球员角色变化（自由人、组织型后腰、伪九号等）。</p>
+        </div>
+
+        <div class="section-block">
+            <h2>🌍 文化与社会记录</h2>
+            <p>世界杯主题曲、吉祥物演变、转播技术迭代、主办国筹备纪实、球迷文化观察。另收录与世界杯相关的书单、纪录片目录、口述历史片段索引，便于延伸阅读。</p>
+        </div>
+    </div>
+
+    <div class="insight">
+        <h3>🔍 使用提示</h3>
+        <p>本页为信息索引入口，所有资料均标注原始来源与整理日期。推荐使用桌面端浏览器查阅详细表格；移动端可横屏浏览宽表。部分链接指向外部资料站，建议搭配笔记工具使用。</p>
+        <p>资料库持续更新，最近一次补充：2026 预选赛赛制与分档说明。</p>
+    </div>
+
+    <div class="faq-mini">
+        <h3>❓ 常见问题摘要</h3>
+        <div class="faq-item">
+            <strong>Q：如何查找某届世界杯的具体数据？</strong>
+            <p>目前按年份与主办国建立索引，在赛事档案区选择对应届次即可查看完整条目。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：规则变化部分是否包含最新修订？</strong>
+            <p>包含截至2025年底的IFAB规则调整摘要，2026年新规将在生效后同步更新。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：是否有球员个人数据专辑？</strong>
+            <p>球员数据目前整合在球队与战术档案中，按国家队与赛事维度呈现，不单独设立个人榜单。</p>
+        </div>
+    </div>
+
+    <div class="link-area">
+        <p>若需要浏览更完整的赛事资料、赛程日历与深度专题，可以前往 <a href="https://m-china-sjb.com">世界杯</a> 信息站。该站以条目式结构组织内容，适合快速检索与横向对比。</p>
+        <p style="margin-top: 0.8rem;">本索引库与上述站点内容互补，一个侧重目录指引，一个侧重数据呈现。</p>
+    </div>
+
+    <div class="footnote">
+        资料整理 · 开放索引 · 版本 2025.06
+    </div>
+
+</div>
+</body>
+</html>
